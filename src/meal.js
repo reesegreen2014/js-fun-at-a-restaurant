@@ -36,8 +36,14 @@ function decreasePrice(price){
 return price * .90;
 }
 
-function createRecipe(){
-}
+function createRecipe(title, ingredients, menuItemType){
+  var recipe = {
+    title: title,
+    ingredients: ingredients,
+    type: menuItemType
+  }
+   return recipe
+  }
 
 
 
