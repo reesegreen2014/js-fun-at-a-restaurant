@@ -43,7 +43,7 @@ function createRecipe(title, ingredients, menuItemType){
     type: menuItemType
   }
    return recipe
-  }
+}
 
 
 

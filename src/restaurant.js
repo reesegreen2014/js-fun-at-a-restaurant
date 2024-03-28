@@ -1,5 +1,5 @@
 function createRestaurant(name){
-return {
+return restaurants = {
   name: name,
   menus: {
     breakfast: [],
@@ -10,8 +10,12 @@ return {
 }
 
 function addMenuItem(pizzaRestaurant, bbqPizza){
-pizzaRestaurant.menus[bbqPizza.type] = pizzaRestaurant.menus[bbqPizza.type]
-pizzaRestaurant.menus[bbqPizza.type].push(bbqPizza)
+if (!pizzaRestaurant.menus[bbqPizza.type]) {
+    pizzaRestaurant.menus[bbqPizza.type] = []
+} 
+  if (!pizzaRestaurant.menus[bbqPizza.type].includes(bbqPizza)) {
+    pizzaRestaurant.menus[bbqPizza.type].push(bbqPizza);
+  }
 }
 
 

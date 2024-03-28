@@ -22,12 +22,12 @@ for (var i = 0; i < deliveryOrders.length; i++){
 }
 
 function searchOrder(deliveryOrders, item){
-for (var i = 0; i < deliveryOrders.length; i ++) {
-  if (deliveryOrders[i].item === item) {
-  return true;
-}
-}
-return false;
+  for (var i = 0; i < deliveryOrders.length; i ++) {
+    if (deliveryOrders[i].item === item) {
+      return true;
+    }
+    }
+  return false;
 }
 
 
